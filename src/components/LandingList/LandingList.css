@@ -1,0 +1,105 @@
+.category-list-container{
+    display: flex;
+    align-items: center;
+    padding: 10px 60px;
+    justify-content: center;
+    height: 80px;
+    gap: 40px;
+}
+.category-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    cursor: pointer;
+    text-wrap: nowrap;   
+
+}
+.category-list:hover i,.category-list:hover p{
+    color: #000000;
+}
+.category-list-end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-wrap: nowrap;   
+
+}
+.category-list-end > i{
+    font-size: 20px;
+}
+.category-list > i{
+     transition: all .2s ease;
+    font-size: 28px;
+    color: #4d4d4d;
+}
+.category-list-end > p{
+    font-size: 14px;
+    text-align: center;
+}
+.category-list > p{
+    transition: all .2s ease;
+     color: #4d4d4d;
+    font-size: 14px;
+ }
+ @media (max-width: 1200px){
+    .category-list:nth-child(8){
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+    .category-list:nth-child(7){
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .category-list:nth-child(6){
+        display: none;
+    }
+    .category-list-container{
+        height: 100%;
+    }
+
+    .category-list{
+        gap: 5px;
+    }
+    .category-list > i{
+        font-size: 22px;
+    }
+    .category-list > p{
+        font-size: 14px;
+    }
+}
+    @media (max-width: 700px){
+        .category-list:nth-child(3){
+            display: none;
+        }
+    }
+    @media (max-width: 600px){
+        .category-list-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 80px);
+            align-items: center;
+            justify-content: center;
+        }
+        .category-list-end{
+            justify-items: end;
+        }
+        
+    }
+    @media (max-width: 440px){
+        .category-list:nth-child(2){
+            display: none;
+        }
+    }
+    @media (max-width: 320px){
+        .category-list-container{
+            grid-template-columns: repeat(auto-fit, 60px);
+        }
+        
+    }

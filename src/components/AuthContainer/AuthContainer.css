@@ -1,0 +1,22 @@
+.authenticate-layout{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    height: 400px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(max-width:450px){
+    .authenticate-layout{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        justify-content: center;
+        gap: 60px;
+    }
+}
