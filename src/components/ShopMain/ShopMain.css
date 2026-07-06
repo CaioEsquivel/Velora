@@ -267,9 +267,12 @@
         padding: 20px 0;
     }
     .main-shopping > h2{
-        padding: 0px 10px 0 60px;
+        padding: 0 10px;
         margin-bottom: 20px;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 }
