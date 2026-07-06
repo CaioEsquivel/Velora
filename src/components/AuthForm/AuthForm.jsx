@@ -79,7 +79,7 @@ export const AuthForm = ({loading, setLoading})=>{
                 <label htmlFor="password">Senha</label>
                 <div className="password-input">
                     <input className={`AuthInput ${Error? 'errorInput':''}`} onChange={e=>SetPasswordInput(e.target.value)} value={PasswordInput} id="password" type={`${PasswordShow? 'text' : 'password'}`} />
-                      <button type='button' onMouseUp={()=>SetPasswordShow(false)} onMouseDown={()=>SetPasswordShow(true)}><i className={`${PasswordShow? 'ri-eye-line' : 'ri-eye-off-line'}`}></i></button>  
+                      <button type='button' onPointerUp={()=>SetPasswordShow(false)} onMouseDown={()=>SetPasswordShow(true)}><i className={`${PasswordShow? 'ri-eye-line' : 'ri-eye-off-line'}`}></i></button>  
                 </div>
                 <p className={`error-messsage ${Error? 'active':''}`}>Login ou Senha incorretos</p>
                 <input id='submit' type="submit" value='Entrar'  />
