@@ -59,7 +59,7 @@ export const ShopMain=({categoryOpen, setCategoryOpen,popupOpen,setProductSelect
     return(
     <>
            <main className="main-shopping">
-            <h2 style={{display: `${productsFilterArr.length === 0?'none':'block'}`}}>Todos os produtos</h2>
+            <h2 style={{display: `${productsFilterArr && productsFilterArr.length === 0?'none':'block'}`}}>Todos os produtos</h2>
             <div className="sob-main-container">
                 <div className="shopping-section-mobile">
                     <button onClick={()=>setCategoryOpen(true)}><i className="ri-contract-right-line"></i></button>
